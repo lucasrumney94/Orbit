@@ -21,10 +21,11 @@ public class SpawnRandomBodies : MonoBehaviour {
 		{
 			spawnPosition = Random.insideUnitSphere*spawnRadius;
 			spawnPosition.y /= accretionDiskFlattenFactor;
+			
 
 			GameObject g = Instantiate(Body, spawnPosition, Random.rotation) as GameObject;
 			g.transform.parent = gameObject.transform;
-			g.GetComponent<Rigidbody>().AddForce(accretionDiskFlattenFactor, 0, accretionDiskFlattenFactor);
+			//g.GetComponent<Rigidbody>().AddForce((Random.Range(0,2)*2-1)*accretionDiskFlattenFactor, 0, (Random.Range(0,2)*2-1)*accretionDiskFlattenFactor);
 			bodies.Add(g);
 		}
 	}
