@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd1fc9e4ba860e4d8fc47dc208eac08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractionRadius: 10
-  attractionMultiplier: 1
+  attractionRadius: 20
+  attractionMultiplier: 0.3
 --- !u!114 &114964113352382056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b361b03b528a4c34c8b740034788ccd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orbitalForceMultiplierMin: 100
-  orbitalForceMultiplierMax: 2000
+  orbitalForceMultiplierMin: 50
+  orbitalForceMultiplierMax: 100
   bothRotations: 1
 --- !u!135 &135783790994297082
 SphereCollider:
